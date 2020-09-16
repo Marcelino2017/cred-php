@@ -55,7 +55,6 @@
 
         <div class="col l12">
             <button type="submit" class="blue btn-small" name="btn_guardar">Guardar</button>
-        </div>
         </form>
     </div>
 

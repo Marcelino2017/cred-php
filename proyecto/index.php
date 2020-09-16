@@ -1,3 +1,10 @@
+<?php 
+
+    date_default_timezone_set('America/Colombia');
+    $fecha_actual = date("Y-m-d H:i:s");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +25,7 @@
         <form action="control.php" method="post" accept-charset="utf-8">
 
         <div class="input-field col l4">
-            <input type="text" name="fecha" value="" placeholder="">
+            <input type="text" name="fecha" value="<?php echo $fecha_actual;?>" placeholder="">
             <label for="">Fecha</label>
         </div>
 
@@ -46,8 +53,8 @@
             <label for="">Turno</label>
         </div>
 
-        <div class="input-field">
-            <button type="submit" class="blue btn-small">Guardar</button>
+        <div class="col l12">
+            <button type="submit" class="blue btn-small" name="btn_guardar">Guardar</button>
         </div>
         </form>
     </div>
